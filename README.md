@@ -40,7 +40,7 @@ Bot: Let me check that for you. Have you tried updating your payment method?
 ### Install Dependencies:
 First, clone the repository and install the required dependencies:
 ```bash
-git clone https://github.com/yourusername/CustomerChatbot.git
+git clone https://github.com/daivikhrajesh/CustomerChatbot.git
 cd CustomerChatbot
 pip install -r requirements.txt
 python3 -m spacy download en
@@ -69,7 +69,7 @@ To quickly get started, download and set up pre-trained customer service models 
 wget https://www.dropbox.com/s/ibm49gx1gefpqju/pretrained-models.zip
 unzip pretrained-models.zip
 rm pretrained-models.zip
-sudo chmod +x predict.py
+python predict.py
 ```
 
 You can now interact with any of the customer service chatbots by running the `predict.py` script. For example, to interact with the **Apple** customer support bot, use the following command:
@@ -105,8 +105,7 @@ python3 datasets/twitter_customer_support/format.py  # This may take a couple of
 Once the dataset is ready, you can begin training the chatbot by running:
 
 ```bash
-sudo chmod +x train.py
-python3 train.py
+python train.py
 ```
 
 ---
