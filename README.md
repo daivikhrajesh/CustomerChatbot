@@ -1,4 +1,4 @@
-# About
+# CustomerChatbot
 Chatbot is a computer program which conducts a conversation in a human-like way. This project implements chatbot which 
 tries to answer users questions as customer support agent. Following customer support chatbots were implemented: 
 [AppleSupport](https://twitter.com/AppleSupport), [AmazonHelp](https://twitter.com/AmazonHelp), 
@@ -6,21 +6,41 @@ tries to answer users questions as customer support agent. Following customer su
 [SpotifyCares](https://twitter.com/SpotifyCares). Chatbots were trained on publicly available conversations between 
 customer supports and users on Twitter.
 
-Chatbot is implemented as sequence to sequence deep learning model with attention. Project is mostly based on 
-[Bahdanau et al. 2014](https://arxiv.org/abs/1409.0473), [Luong et al. 2015.](https://arxiv.org/abs/1508.04025) 
-and [Vinyals et al., 2015.](https://arxiv.org/abs/1506.05869).
+## Features
+- Trainable Seq2Seq chatbot with encoder-decoder architecture.  
+- Supports multiple RNN cells (LSTM/GRU).  
+- Implements Bahdanau and Luong attention mechanisms.  
+- Customizable embedding layers with GloVe support.  
+- Pre-trained customer service models for Apple, Amazon, Uber, Delta, and Spotify.  
+- Interactive chat interface.  
+- GPU and multi-GPU support for training and inference.  
 
-# Sample conversations
-Sample conversations with customer support chatbots. Conversations with chatbots are not ideal but show promising 
-results. Chatbot answers are in grey bubbles.
+---
+
+## Sample conversations
+### Example Conversation
+```
+Bot: Hi, how can I help you?  
+Me: I need help with my account.  
+Bot: Sure! Can you tell me more about the issue?  
+Me: My payment is not going through.  
+Bot: Let me check that for you. Have you tried updating your payment method?  
+```
+
+### Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## Model Architecture
+- **Encoder:** Bidirectional RNN (LSTM/GRU) with optional embedding layers.  
+- **Attention:** Supports both Bahdanau and Luong mechanisms.  
+- **Decoder:** RNN with attention for sequence prediction. 
 
 # Dataset 
 Dataset used for training chatbot can be found 
 [here](https://www.kaggle.com/thoughtvector/customer-support-on-twitter/data). This dataset was created by collecting 
 publicly available conversations between customer supports and users on Twitter. Many thanks to the author of dataset!
-
-# Try it out!
-You can try out chatbot by using pre-trained models or by training your own chatbot.
 
 ## Installation 
 ```bash
