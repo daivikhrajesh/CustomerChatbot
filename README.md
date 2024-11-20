@@ -14,17 +14,6 @@ and [Vinyals et al., 2015.](https://arxiv.org/abs/1506.05869).
 Sample conversations with customer support chatbots. Conversations with chatbots are not ideal but show promising 
 results. Chatbot answers are in grey bubbles.
 
-## [AppleSupport](https://twitter.com/AppleSupport)
-![Apple](conversations/apple.png)
-## [AmazonHelp](https://twitter.com/AmazonHelp)
-![Amazon](conversations/amazon.png)
-## [Uber_Support](https://twitter.com/Uber_Support)
-![Uber](conversations/uber.png)
-## [Delta](https://twitter.com/Delta)
-![Delta](conversations/delta.png)
-## [SpotifyCares](https://twitter.com/SpotifyCares)
-![Spotify](conversations/spotify.png)
-
 # Dataset 
 Dataset used for training chatbot can be found 
 [here](https://www.kaggle.com/thoughtvector/customer-support-on-twitter/data). This dataset was created by collecting 
